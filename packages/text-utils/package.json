@@ -1,6 +1,6 @@
 {
   "name": "@lucass-hsa1/text-utils",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Slugify, sanitização ASCII, formatadores",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -13,7 +13,9 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
