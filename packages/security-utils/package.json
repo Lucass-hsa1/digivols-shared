@@ -1,6 +1,6 @@
 {
   "name": "@lucass-hsa1/security-utils",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "generateStrongPassword, magic-byte sniffer, helpers de segurança",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -13,7 +13,9 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
