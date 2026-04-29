@@ -1,0 +1,44 @@
+{
+  "name": "@lucass-hsa1/security-mw",
+  "version": "0.0.0",
+  "description": "Middleware Express: rate-limit IP, lockout por conta, brute-force protection",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "echo 'todo: eslint'",
+    "test": "echo 'todo: vitest'",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "peerDependencies": {
+    "express": "^4 || ^5",
+    "express-rate-limit": "^7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lucass-hsa1/digivols-shared.git",
+    "directory": "packages/security-mw"
+  }
+}
