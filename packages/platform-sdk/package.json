@@ -1,0 +1,78 @@
+{
+  "name": "@lucass-hsa1/platform-sdk",
+  "version": "0.1.0",
+  "description": "SDK oficial da plataforma Digivolution: tipos canônicos, HTTP client, validação de webhooks, middleware Express",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.js",
+      "require": "./dist/types/index.cjs"
+    },
+    "./auth": {
+      "types": "./dist/auth/index.d.ts",
+      "import": "./dist/auth/index.js",
+      "require": "./dist/auth/index.cjs"
+    },
+    "./client": {
+      "types": "./dist/client/index.d.ts",
+      "import": "./dist/client/index.js",
+      "require": "./dist/client/index.cjs"
+    },
+    "./webhooks": {
+      "types": "./dist/webhooks/index.d.ts",
+      "import": "./dist/webhooks/index.js",
+      "require": "./dist/webhooks/index.cjs"
+    },
+    "./middleware/express": {
+      "types": "./dist/middleware/express-tenant-admin.d.ts",
+      "import": "./dist/middleware/express-tenant-admin.js",
+      "require": "./dist/middleware/express-tenant-admin.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "echo 'todo: eslint'",
+    "test": "echo 'todo: vitest'",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "jose": "^5.9.6"
+  },
+  "peerDependencies": {
+    "express": "^4 || ^5"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "express": "^5.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lucass-hsa1/digivols-shared.git",
+    "directory": "packages/platform-sdk"
+  },
+  "keywords": ["digivolution", "platform", "sdk", "saas"]
+}
