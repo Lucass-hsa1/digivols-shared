@@ -8,7 +8,7 @@
 
   **`@lucass-hsa1/image-utils`** — Compressão e redimensionamento de imagens com entries separados pra browser (Canvas) e Node (Sharp).
 
-  - `/browser`: `resizeImage(file, opts)`, `compressToJPEG`, `compressToWebP` — extraído das 3 versões duplicadas em probarber/probeauty/catalogo.
+  - `/browser`: `resizeImage(file, opts)`, `compressToJPEG`, `compressToWebP` — extraído das 3 versões duplicadas em probarber/beauty/catalogo.
   - `/node`: `compressImage(buffer, opts)` (com fallback automático WebP→JPEG), `sniffImageMime`, `validateMagicBytes`.
 
   Sharp é peer-dep opcional. Aceita opções `maxWidth`, `maxHeight`, `quality`, `format`, `background`.
@@ -21,7 +21,7 @@
   **`@lucass-hsa1/security-utils`** — Utilitários de segurança universais (browser + Node 20+).
 
   - `generateStrongPassword(length, alphabet?)` — CSPRNG via `globalThis.crypto`, fallback `Math.random`.
-  - `getInitialPassword(opts)` — com flag `useLegacyDefault` pra paridade com probarber/probeauty.
+  - `getInitialPassword(opts)` — com flag `useLegacyDefault` pra paridade com probarber/beauty.
   - `generateOpaqueToken`, `generateApiKey` (formato `sk_xxx`).
   - `constantTimeEqual` — comparação timing-safe pra tokens.
 

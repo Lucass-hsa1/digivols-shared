@@ -1,6 +1,6 @@
 // SDK oficial da plataforma Digivolution.
 //
-// Pacote que apps clientes (catalogo-plus, probarber-manager, probeauty-manager,
+// Pacote que apps clientes (catalogo-plus, probarber-manager, beauty-manager,
 // e qualquer app futuro) usam pra:
 //   - Tipos canônicos da plataforma (Tenant, PlatformUser, Plan, etc)
 //   - HTTP client pra chamar /api/v1/* da plataforma

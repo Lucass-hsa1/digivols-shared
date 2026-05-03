@@ -1,9 +1,9 @@
 // Tipos comuns à plataforma. Espelham o schema Prisma do digivols-superadmin.
 // Detalhes em /root/digivols-platform-rewrite/01-arquitetura.md
 
-export type AppId = 'probarber' | 'probeauty' | 'catalogo'
+export type AppId = 'probarber' | 'beauty' | 'catalogo'
 
-export const APP_IDS = ['probarber', 'probeauty', 'catalogo'] as const
+export const APP_IDS = ['probarber', 'beauty', 'catalogo'] as const
 
 export interface Address {
   street?: string

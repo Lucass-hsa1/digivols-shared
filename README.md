@@ -2,7 +2,7 @@
 
 Pacotes npm compartilhados do ecossistema **Digivolution** (Lucas / lucass.hsa1@gmail.com).
 
-Reduz duplicação de código entre os apps em produção (ProBarber Manager, ProBeauty Manager, Catálogo Plus) e o **Facilities-Hub** (ex-CommHub) em `comm-hub.digivols.com.br` / `facilities-hub.digivols.com.br`.
+Reduz duplicação de código entre os apps em produção (ProBarber Manager, Beauty Manager, Catálogo Plus) e o **Facilities-Hub** (ex-CommHub) em `comm-hub.digivols.com.br` / `facilities-hub.digivols.com.br`.
 
 ## Pacotes
 
@@ -34,7 +34,7 @@ pnpm test
 
 ## Adicionar um pacote em um app consumidor
 
-Em cada app que vai consumir os pacotes (`probarber-manager-mvp`, `probeauty-manager`, `catalogo-plus`):
+Em cada app que vai consumir os pacotes (`probarber-manager-mvp`, `beauty-manager`, `catalogo-plus`):
 
 1. Criar `.npmrc` na raiz do app:
 

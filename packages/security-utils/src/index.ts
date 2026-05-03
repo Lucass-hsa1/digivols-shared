@@ -65,7 +65,7 @@ export interface InitialPasswordOptions {
  * Retorna a senha inicial pra um novo usuário.
  *
  * Em apps em produção, prefira sempre `generateStrongPassword`. A flag `useLegacyDefault`
- * existe pra paridade com o comportamento histórico do ProBarber/ProBeauty
+ * existe pra paridade com o comportamento histórico do ProBarber/Beauty
  * (envvar `VITE_LEGACY_DEFAULT_PASSWORD=true`).
  */
 export function getInitialPassword(opts: InitialPasswordOptions = {}): string {
