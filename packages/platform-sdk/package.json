@@ -1,6 +1,6 @@
 {
   "name": "@lucass-hsa1/platform-sdk",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "SDK oficial da plataforma Digivolution: tipos canônicos, HTTP client, validação de webhooks, middleware Express",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -38,7 +38,9 @@
       "require": "./dist/middleware/express-tenant-admin.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -74,5 +76,10 @@
     "url": "https://github.com/Lucass-hsa1/digivols-shared.git",
     "directory": "packages/platform-sdk"
   },
-  "keywords": ["digivolution", "platform", "sdk", "saas"]
+  "keywords": [
+    "digivolution",
+    "platform",
+    "sdk",
+    "saas"
+  ]
 }
